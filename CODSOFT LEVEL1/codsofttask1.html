@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: url('https://png.pngtree.com/background/20220726/original/pngtree-vector-background-in-the-concept-of-technology-picture-image_1825500.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about, #contact {
+    background: #f4f4f4;
+}
+
+#services {
+    background: #fff;
+}
+
+#services .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#services .service {
+    width: 30%;
+    margin: 10px 0;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Codsoft Task1</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to Our Landing Page</h1>
+            <p>Your success starts here</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </header>
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="https://images01.nicepagecdn.com/page/15/05/website-template-preview-1505179.webp" alt="abou">
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*JWStOGfx3DvZDDphuMNvgQ.jpeg" style="height: 500px;" width="450px">
+                <h3>UI/UX design.</h3>
+                <p>UX design is all about identifying and solving user problems; UI design is all about creating intuitive, aesthetically-pleasing, interactive interfaces. </p>
+            </div>
+            <div class="service">
+                <img src="https://www.springboard.com/blog/wp-content/uploads/2022/06/why-is-digital-marketing-so-important-to-businesses.jpg" style="height: 500px;" width="450px">
+                <h3>Digital Marketing</h3>
+                <p>Digital marketing is a marketing strategy that uses digital innovation to promote products or services in a targeted, measurable, and interactive way.</p>
+            </div>
+            <div class="service">
+                <img src="https://www.shutterstock.com/image-photo/analyst-uses-computer-dashboard-data-600nw-2285412737.jpg" style="height: 500px;" width="450px">
+                <h3>Data Analyst</h3>
+                <p>Data analysts use various tools and techniques to interpret data sets and answer questions or solve problems. They work in many industries, including business, finance, criminal justice, science, medicine, and government.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>

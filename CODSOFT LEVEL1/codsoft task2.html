@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 60px; /* To avoid content being hidden under fixed header */
+}
+
+#home {
+    background: #f4f4f4;
+    padding: 5rem 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#about {
+    background: #e2e2e2;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    animation: slideInLeft 1.5s ease-in-out;
+}
+
+#projects {
+    background: #f4f4f4;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background: #fff;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    width: calc(33% - 2rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#contact {
+    background: #e2e2e2;
+    padding: 2rem 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 0.5rem 0 0.25rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hello! I'm M.Abdul Rehaman, a Btech final year student.
+                <img src="https://images.playground.com/d19396e141e548e8be2cc4b143ae5c07.jpeg" alt="images">
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="/abdul.jpg" alt="[Your Name]">
+            <p> Hello! My name is M Abdul Rehaman, and I'm a passionate and dedicated Btech student. <br>
+
+                My Journey<br>
+                
+                I embarked on my professional journey with a degree in Btech- Computer Science & Systems Engineering from Sree Vidyanikethan Engineering College. Since then, I have had the privilege of working on a variety of projects that have challenged and inspired me. From designing intuitive user interfaces to developing robust back-end solutions, I thrive on solving complex problems and delivering high-quality results.<br>
+                
+                What I Do<br>
+                
+                Web Development: Creating responsive and user-friendly websites using HTML, CSS, JavaScript, and modern frameworks like React and Angular.
+                Data Base Management System: The Database Management System (DBMS) project aims to create a robust and scalable platform for efficient data management and storage. This system will support essential database functionalities such as data creation, retrieval, updating, and deletion , along with advanced features like transaction management, user authentication, and data security.<br> 
+                
+                My Philosophy<br>
+                
+                I believe in the power of technology to transform lives and businesses. My approach is rooted in continuous learning and adaptation, always staying updated with the latest industry trends and best practices. I am committed to excellence and strive to exceed expectations in every project I undertake.<br>
+                
+                Let's Connect<br>
+
+                I am always open to new opportunities and collaborations. Whether you're looking to start a new project or just want to say hello, feel free to get in touch. Let's create something amazing together!</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <img src="https://cache.careers360.mobi/media/article_images/2022/4/28/10-Interesting-Web-Development-Project-Ideas-For-Beginners.webp" alt="Project 1">
+                <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"> Real Estate Management </h3>
+                <p> Project Description:
+                    The Real Estate Management System is a web-based application designed to facilitate the management and viewing of real estate properties. This system aims to provide a user-friendly interface for property managers, real estate agents, and potential buyers or renters. The primary goal is to streamline the process of listing properties, managing property details, and enabling users to search and view available properties. </p>
+            </div>
+            <div class="project">
+                <img src="https://images.credly.com/images/d383e88b-5884-464d-9064-05ad761d0eef/Database_Management_GVSU_Badge.png" alt="Project 2">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Movie Management System </h3>
+                <p> Project Description:
+                    Movie Management System is a web application built using Django along with MySQL database, which allows users to filter, view and making reservations for various different movies. This is a project made for Database Systems Lab course.</p>
+            </div>
+            <div class="project">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtNDfrqa5u0UwUMD45mw0XYBfDFEU7oLtUcw&s" alt="Project 2">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Email Validation Testing</h3>
+                <p>Project Description:
+                    The Email Validation Testing System is a software project designed to verify and validate email addresses to ensure they adhere to proper formatting rules and are capable of receiving emails. This system aims to improve the quality and reliability of email communication by identifying and filtering out invalid or improperly formatted email addresses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button style="color: aquamarine;" type="submit">Send</button>
+        </form>
+    </section>
+   <script>
+    // Optional JavaScript for additional interactivity or animations
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("JavaScript loaded!");
+});
+
+   </script>
+</body>
+</html>
